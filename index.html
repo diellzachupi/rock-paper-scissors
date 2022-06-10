@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+    
+</head>
+<body>
+    <div class="page">
+        <h1 class="title">You vs The Computer</h1>
+        <h4 class="info">5 round game</h4>
+
+        <div class="score">
+            <ul class="scoreNumber">
+                <li id="playerNumber">0</li>
+                <li id="computerNumber">0</li>
+            </ul>
+
+            <ul class="scoreTable">
+                <li id="scorePlayer">You</li>
+                <li id="scoreComputer">The Computer</li>
+            </ul>
+
+            <p id="outcome"></p>
+    
+        </div>
+        <div class="images">
+            <input type="image" id = 'Rock' src="img/rock.png" onclick="play(this.id)">
+			<input type="image" id = 'Paper' src="img/paper.png" onclick="play(this.id)" >
+			<input type="image" id = 'Scissors' src="img/scissors.png" onclick="play(this.id)" >
+
+        </div>
+        <input type="button" value = 'Replay' id = 'reset' onclick="window.location.reload()">
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
